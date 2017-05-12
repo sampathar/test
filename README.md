@@ -1,4 +1,12 @@
+# Authors
+Vyshnavi && Sampath
+
 # Quizapp
+
+This project is develeloped by using Angular4, Material Design Lite, FireBase
+
+Material Design Lite : https://getmdl.io
+Firebase: https://console.firebase.google.com
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
 
