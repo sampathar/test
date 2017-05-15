@@ -8,8 +8,9 @@ import { LoginComponent } from './login/login.component';
 import { RightComponent } from './login/right/right.component';
 import { LeftComponent } from './login/left/left.component';
 import { HomeComponent } from './home/home.component';
-import { RouterModule } from '@angular/router';
-import {router} from './app.router';
+import { routing, appRoutingProviders } from './app.router';
+import { RulesComponent } from './home/rules/rules.component';
+import { LeaderboardComponent } from './home/leaderboard/leaderboard.component';
 
 @NgModule({
   declarations: [
@@ -17,16 +18,19 @@ import {router} from './app.router';
     LoginComponent,
     RightComponent,
     LeftComponent,
-    HomeComponent
+    HomeComponent,
+    RulesComponent,
+    LeaderboardComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    RouterModule,
-    RouterModule.forRoot(router)
+    routing
   ],
-  providers: [],
+  providers: [
+    appRoutingProviders
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
